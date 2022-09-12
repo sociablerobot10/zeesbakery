@@ -1,0 +1,10 @@
+/* Horizontal sections */
+#menu-title {
+    width: 100%;
+    height: 250px;
+}
+
+#menu-title h1 {
+    color: #280904;
+    text-color: #FFFFFF;
+}
