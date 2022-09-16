@@ -1,119 +1,426 @@
- * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- /* FIRST SECTION */
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
- #hero {
-     width: 100%;
-     height: 550px;
+.clear {
+  clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
 
-     background-image: url("../images/cupcake.jpg");
-     background-position: center;
-     background-size: 100%;
-     background-repeat: no-repeat;
- }
+html {
+  font-size: 62.5%; /* for REM font */
+}
 
- #hero h1 {
-     font-family: 'Pacifico', sans-serif;
-     font-size: 5em;
-     text-align: center;
-     padding-top: 4%;
-     color: #280904;
- }
+body {
+  font-family: "Cinzel Decorative", cursive;
+  margin: 0;
+}
 
+header {
+  height: 112px;
+  background-color: #e7bb41;
+  color: blue;
 
- /* MID SECTION */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+.headerLeftThird {
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
 
- #mid-section {
-     height: 495px;
-     display: flex;
-     margin-top: 50px;
+  height: 112px;
+  border: 1px dashed navy;
+  width: 387px;
 
- }
+  font-size: 4.5rem;
+  font-family: "Pacifico", cursive;
 
- .part-section {
-     width: 33.3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-     text-align: center;
-     font-family: 'Pacifico', sans-serif;
-     font-size: 34px;
-     text-align: center;
-     color: #393E41;
- }
+.headerRightThird {
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
 
- #order {
-     background-color: #E7BB41;
- }
+  /* font-size: 2rem; */
+  font-family: "Gentium Book Basic", serif;
 
- #order h2 {
-     margin: 4% 0;
-     padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
 
- }
+.ulLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
 
- .order-now {
-     font-family: 'Gentium Book Basic', serif;
-     text-decoration: none;
-     color: #393E41;
- }
+.headerLinks {
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
+  /* border: 2px dashed rgb(189, 12, 12); */
 
- #donut {
-     background-image: url("../images/donut-mid.jpg");
-     background-size: cover;
-     background-position: center top;
- }
+  font-size: 3rem;
+  font-family: "Gentium Book Basic", serif;
 
- #waffle {
-     background-image: url("../images/heartwaffle-mid.jpg");
-     background-size: cover;
-     background-position: center;
- }
+  text-justify: center;
+  text-align: center;
 
- button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* gap:20px; */
+  justify-content: space-evenly;
+  /* flex:content; */
+  flex-grow: 5;
+}
 
-     height: 100px;
-     width: 220px;
-     border-radius: 65px;
-     color: #393E41;
-     background-color: #B7C3F3;
-     font-size: 30px;
-     font-family: 'Gentium Book Basic', serif;
-     font-weight: bold;
-     font-weight: 700;
- }
+.headerLinks:hover {
+  background-color: #e7bb41;
+  border: 2px dashed #ff595e;
+  border-radius: 4rem;
+}
 
- #features {
-     height: 495px;
-     display: flex;
-     margin-top: 50px;
- }
+nav {
+}
 
- /* LAST SECTION */
+ul {
+}
 
- .feature {
-     width: 33.3%;
-     text-align: center;
-     font-family: 'Gentium Book Basic', serif;
-     font-size: 34px;
-     text-align: center;
-     color: #393E41;
-     font-weight: 700;
- }
+li {
+  list-style: none;
+  text-decoration: none;
+  /* border: 1px dashed navy; */
+}
 
- .feature-one {
-     ;
- }
+.aLink {
+  list-style: none;
+  text-decoration: none;
+  /* border: 1px dashed navy; */
+}
 
- p {
-     font-size: 25px;
-     color: #529FB9;
+.aLink:hover {
+  /* border: 1px dashed navy; */
+  font-size: 3.5rem;
+  font-family: "Gentium Book Basic", serif;
+  color: #ff595e;
+}
 
- }
+.tempCentralBody {
+  width: auto;
+  height: 600px;
+  display: flex;
+}
 
- img {
-     width: 100%;
- }
+footer {
+  width: auto;
+  height: 211px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerLeft {
+  font-size: 2.5rem;
+  font-family: "Gentium Book Basic", serif;
+
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  width: 387px;
+}
+
+.footerMiddle {
+  font-size: 1rem;
+  font-family: "Gentium Book Basic", serif;
+
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
+  border: 2px dashed navy;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  height: 211px;
+  flex-grow: 1;
+}
+
+.footerLinks {
+}
+
+.ulSocial {
+  list-style: none;
+  border: 1px dashed navy;
+
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  width: 100%;
+}
+
+.liSocial {
+  list-style: none;
+  border: 1px dashed navy;
+}
+
+.sCopyRight {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pCopyRight {
+  text-justify: center;
+  text-align: center;
+  font-size: 1.5rem;
+
+  align-items: center;
+}
+
+.imgSocial {
+  width: 50px;
+  height: 50px;
+}
+
+.footerRight {
+  font-size: 1rem;
+  font-family: "Gentium Book Basic", serif;
+
+  display: flex;
+  width: 387px;
+  justify-content: space-around;
+
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
+}
+
+.liSocialCupCake {
+  list-style: none;
+  border: 1px dashed navy;
+
+  justify-content: center;
+  align-items: center;
+
+  text-justify: center;
+  flex-direction: row;
+  width: 387px;
+}
+
+.imgCupCake {
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+/* FIRST SECTION */
+
+#hero {
+  width: 100%;
+  height: 550px;
+
+  background-image: url("../images/cupcake.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 4%;
+  color: #280904;
+}
+
+/* MID SECTION */
+
+#mid-section {
+  height: 495px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.part-section {
+  width: 33.3%;
+
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 34px;
+  text-align: center;
+  color: #393e41;
+}
+
+#order {
+  background-color: #e7bb41;
+}
+
+#order h2 {
+  margin: 4% 0;
+  padding: 0 10%;
+}
+
+.order-now {
+  font-family: "Gentium Book Basic", serif;
+  text-decoration: none;
+  color: #393e41;
+}
+
+#donut {
+  background-image: url("../images/donut-mid.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+#waffle {
+  background-image: url("../images/heartwaffle-mid.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  height: 100px;
+  width: 220px;
+  border-radius: 65px;
+  color: #393e41;
+  background-color: #b7c3f3;
+  font-size: 30px;
+  font-family: "Gentium Book Basic", serif;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+#features {
+  height: 495px;
+  display: flex;
+  margin-top: 50px;
+}
+
+/* LAST SECTION */
+
+.feature {
+  width: 33.3%;
+  text-align: center;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 34px;
+  text-align: center;
+  color: #393e41;
+  font-weight: 700;
+}
+
+.feature-one {
+}
+
+p {
+  font-size: 25px;
+  color: #529fb9;
+}
+
+img {
+  width: 100%;
+}
+
+/* ==================
+ Location page
+=====================*/
+.loc-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.loc-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.loc-item {
+  padding: 5rem 5rem;
+
+  /* border: 2px solid red; */
+  width: 60%;
+}
+
+.loc-item-2 {
+  border: 2px solid black;
+  background-image: url("../images/nyc.png");
+  background-size: cover;
+  width: 40%;
+  height: auto;
+}
+
+.fa-solid {
+  /* border: 2px solid red; */
+  font-size: 2.25rem;
+  color: #ff595e;
+}
+.loc-h1 {
+  /* border: 2px solid black; */
+  text-align: center;
+  font-family: "pacifico", sans-serif;
+  color: #393e41;
+
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.location {
+  font-family: "Gentium Book Basic", sans-serif;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.placing {
+  margin-left: 35rem;
+}
+
+.parOne,
+.parTwo {
+  font-family: "Gentium Book Basic", sans-serif;
+  font-weight: 700;
+}
+
+.loc-item .parOne {
+  color: #ff595e;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+span {
+  color: #000;
+}
+.loc-item .parTwo {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}

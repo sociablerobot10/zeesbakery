@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Your description goes here" />
-    <meta name="keywords" content="one, two, three" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Bakery</title>
-
-    <!-- external CSS FONT link -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zee's Bakery</title>
+    <!-- Font awesome icon script -->
+    <script
+      src="https://kit.fontawesome.com/7b51e8ec68.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Pacifico font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Gentium+Book+Basic&family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
 
-    <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Gentium-book-basic font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -38,39 +43,34 @@
       </nav>
     </header>
 
-    <section id="hero">
-      <h1>Zee's Bakery</h1>
-    </section>
+    <main class="loc-container">
+      <section class="loc-item">
+        <h1 class="loc-h1">Locations & Hours</h1>
+        <!-- icon and location -->
+        <div class="loc-top">
+          <i class="fa-solid fa-location-dot placing"></i>
+          <h3 class="location fa-solid">Location</h3>
+        </div>
+        <!-- Endicon and location -->
 
-    <section id="mid-section">
-      <section class="part-section" id="donut"></section>
-      <section class="part-section" id="order">
-        <h2>Customized cookies, donuts & cupcakes</h2>
-        <button><a href="#" class="order-now">ORDER NOW</a></button>
-      </section>
-      <section class="part-section" id="waffle"></section>
-    </section>
-
-    <section id="features">
-      <section class="feature" id="feature-one">
-        <img src="images/smartphone.png" />
-        <h3>Fast Delivery</h3>
-        <p>Fast time to deliver with customized packaging.</p>
-      </section>
-      <section class="feature" id="feature-two">
-        <img src="images/fast-delivery.png" alt="gluten-free-image" />
-        <h3>Mobile App</h3>
-        <p>Collect rewards, order on the go, and check orders</p>
-      </section>
-      <section class="feature" id="feature-three">
-        <img src="images/gluten-free.png" alt="gluten-free-image" />
-        <h3>Healthy Choices</h3>
-        <p>
-          Select from several healthy options-gluten free, sugar free,
-          vegan-friendly
+        <!-- Address and hours -->
+        <p class="placing parOne">
+          1 main st. <br />
+          new york city, NY<br />
+          01685 <br />
+          <span>212-355-5555</span>
         </p>
+        <p class="placing parTwo">
+          open monday<br />
+          through saturday<br />
+          7am-7pm<br />
+          closed on sunday
+        </p>
+        <!-- End address and hours -->
       </section>
-    </section>
+
+      <section class="loc-item-2"></section>
+    </main>
 
     <footer class="">
       <section class="footerLeft footerLeftP">
@@ -113,7 +113,6 @@
         />
       </section>
     </footer>
-
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
