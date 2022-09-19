@@ -105,12 +105,6 @@ header {
   border-radius: 4rem;
 }
 
-nav {
-}
-
-ul {
-}
-
 li {
   list-style: none;
   text-decoration: none;
@@ -173,9 +167,6 @@ footer {
 
   height: 211px;
   flex-grow: 1;
-}
-
-.footerLinks {
 }
 
 .ulSocial {
@@ -337,9 +328,6 @@ button {
   font-weight: 700;
 }
 
-.feature-one {
-}
-
 p {
   font-size: 25px;
   color: #529fb9;
@@ -358,11 +346,12 @@ img {
   background-color: #fff;
 }
 
-.loc-top {
+.loc-containerTwo {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: left;
+  /* border: 2px solid black; */
+  padding: 0;
 }
 
 .loc-item {
@@ -373,7 +362,6 @@ img {
 }
 
 .loc-item-2 {
-  border: 2px solid black;
   background-image: url("../images/nyc.png");
   background-size: cover;
   width: 40%;
@@ -382,11 +370,14 @@ img {
 
 .fa-solid {
   /* border: 2px solid red; */
+  margin-top: 2.5rem;
   font-size: 2.25rem;
+  text-align: center;
   color: #ff595e;
 }
-.loc-h1 {
+.loc-h2 {
   /* border: 2px solid black; */
+
   text-align: center;
   font-family: "pacifico", sans-serif;
   color: #393e41;
@@ -395,18 +386,28 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
 .location {
   font-family: "Gentium Book Basic", sans-serif;
+  text-align: center;
   padding-left: 1.5rem;
   padding-top: 1rem;
 }
 
-.placing {
-  margin-left: 35rem;
-}
+/* .placing {
+  margin-left: 40rem;
+} */
 
 .parOne,
 .parTwo {
+  display: inline;
+  margin-inline: auto;
   font-family: "Gentium Book Basic", sans-serif;
   font-weight: 700;
 }
