@@ -34,12 +34,20 @@
 
  #hero h1 {
      font-family: 'Pacifico', sans-serif;
-     font-size: 5em;
+     font-size: 7em;
      text-align: center;
      padding-top: 4%;
      color: #280904;
+     margin-top: 0%;
  }
 
+ #muffin-img {
+     width: 5%;
+     float: left;
+     position: relative;
+     left: 36%;
+     top: 12%;
+ }
 
  /* MID SECTION */
 
@@ -47,7 +55,9 @@
  #mid-section {
      height: 495px;
      display: flex;
-     margin-top: 50px;
+     margin-top: 4%;
+
+
 
  }
 
@@ -59,15 +69,30 @@
      font-size: 34px;
      text-align: center;
      color: #393E41;
+
+
+ }
+
+ #donut {
+     border-radius: 2.5% 0 0 2.5%;
+ }
+
+ #waffle {
+     border-radius: 0 2.5% 2.5% 0;
  }
 
  #order {
      background-color: #E7BB41;
+     padding-top: 5%;
  }
 
+
  #order h2 {
-     margin: 4% 0;
+
      padding: 0 10%;
+     margin-right: 6%;
+     margin-left: 8%;
+     margin-bottom: 8%;
 
  }
 
@@ -120,9 +145,6 @@
      font-weight: 700;
  }
 
- .feature-one {
-     ;
- }
 
  p {
      font-size: 25px;
@@ -130,8 +152,20 @@
 
  }
 
- img {
-     width: 100%;
+ .feature img {
+     width: 35%;
+     padding-bottom: 3%;
+     padding-top: 3%;
+ }
+
+ .feature h3 {
+     padding-bottom: 5%;
+ }
+
+
+ .feature p {
+     margin: 0 20%;
+
  }
 
  /* Box Model Hack */
