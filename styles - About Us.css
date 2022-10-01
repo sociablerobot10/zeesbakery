@@ -1,0 +1,416 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* FIRST SECTION */
+#hero {
+    width: 100%;
+    height: 550px;
+
+    background-image: url("../images/cupcake.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#hero h1 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    padding-top: 4%;
+    color: #280904;
+}
+
+/* LAST SECTION */
+
+.feature {
+    width: 33.3%;
+    text-align: center;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 34px;
+    text-align: center;
+    color: #393E41;
+    font-weight: 700;
+}
+
+.feature-one {
+    ;
+}
+
+p {
+    font-size: 25px;
+    color: #529FB9;
+}
+
+img {
+    width: 100%;
+}
+
+/* Box Model Hack */
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    font-size: 62.5%
+        /* for REM font */
+}
+
+
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+}
+
+
+header {
+    height: 112px;
+    background-color: #E7BB41;
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* HEADER UPPER LEFT : ZEE BAKERY CONTAINER */
+.headerLeftThird {
+    background-color: #393E41;
+    color: rgb(255, 255, 255);
+
+    height: 112px;
+    /* border: 1px dashed navy; */
+    width: 387px;
+
+    font-size: 4.5rem;
+    font-family: 'Pacifico', cursive;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEADER UPPER LEFT : SCALLOP DETAILS */
+.shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    background-color: aquamarine;
+}
+
+.top,
+.right,
+.bottom,
+.left {
+    background-color: blueviolet;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.top,
+.bottom {
+    height: 10px;
+    width: 20px;
+}
+
+.right,
+.left {
+    height: 20px;
+    width: 10px;
+}
+
+/* shape-outside: inset(20px 10px 20px 10px round 10px); */
+/* background:red; */
+
+.bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* HEADER UPPER RIGHT : LINK CONTAINER  */
+.headerRightThird {
+    background-color: #E7BB41;
+    color: rgb(0, 0, 0);
+
+    /* font-size: 2rem; */
+    font-family: 'Gentium Book Basic', serif;
+
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.ulLinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.headerLinks {
+    background-color: #E7BB41;
+    color: rgb(0, 0, 0);
+
+    /* border: 2px dashed rgb(189, 12, 12);   */
+    /*              */
+    height: 112px;
+    width: 100%;
+
+
+    font-size: 3rem;
+    font-family: 'Gentium Book Basic', serif;
+
+    text-justify: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    /* gap:20px; */
+    justify-content: space-evenly;
+    /* flex:content; */
+    flex-grow: 5;
+}
+
+.headerLinks:hover {
+    /* background-color: #E7BB41; */
+    background-color: #ff595f8b;
+
+    /* border: 2px dashed #FF595E; */
+    /* border-radius: 4rem; */
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px dashed navy; */
+}
+
+.aLink {
+    list-style: none;
+    text-decoration: none;
+
+    text-align: center;
+    text-justify: center;
+    /* border: 1px dashed navy; */
+}
+
+.aLink:hover {
+    /* border: 1px dashed navy; */
+    font-size: 3.5rem;
+    font-size: 3.2rem;
+
+    font-family: 'Gentium Book Basic', serif;
+    /* color:#FF595E; */
+    color: #000000;
+    color: #ffffff;
+}
+
+/* The sidebar menu */
+.sidebar {
+   
+    width: 40%;
+   /* position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   /* top: auto; /* Stay at the top */
+  /* right: 0; 
+    background-color: #393E41;
+   /* overflow-x: hidden; /* Disable horizontal scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: black;
+  }
+
+  .imagesInSidebar{
+    display: block;
+    align-items: center;
+    width: 50%;
+  }
+
+/* BODY */
+.mainBody{
+    overflow: hidden;
+    width: 100%;
+    border-style: double;
+    display: flex;
+    justify-content: left;
+}
+
+
+.AboutUsText{
+    width: 60%;
+}
+
+
+.Paragraph{
+}
+
+/* MEET THE TEAM */
+.MeetTheTeam{
+    font-size: 2.2rem;
+    text-align: center;
+    text-justify: center;
+    color: black;
+    
+}
+.TeamMember1{
+    width: 25%; float: left;
+    background-color: orange;
+}
+.TeamMember2{
+    width: 25%; float: left;
+}
+.TeamMember3{
+    width: 25%; float: left;
+}
+.TeamMember4{
+    width: 25%; float: left;
+}
+
+/* Footer */
+
+footer {
+    width: auto;
+    height: 211px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.footerLeft {
+    font-size: 2.5rem;
+    font-family: 'Gentium Book Basic', serif;
+
+    background-color: #393E41;
+    color: rgb(255, 255, 255);
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    width: 387px;
+
+}
+
+
+
+.footerMiddle {
+    font-size: 1rem;
+    font-family: 'Gentium Book Basic', serif;
+
+    background-color: #E7BB41;
+    color: rgb(0, 0, 0);
+    /* border: 2px dashed navy; */
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 211px;
+    flex-grow: 1;
+}
+
+
+.footerLinks {}
+
+
+
+.ulSocial {
+    list-style: none;
+    /* border: 1px dashed navy; */
+
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    width: 100%;
+}
+
+.liSocial {
+    list-style: none;
+    /* border: 1px dashed navy; */
+}
+
+
+.sCopyRight {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pCopyRight {
+    text-justify: center;
+    text-align: center;
+    font-size: 2.0rem;
+
+    align-items: center;
+}
+
+.imgSocial {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.footerRight {
+    font-size: 1rem;
+    font-family: 'Gentium Book Basic', serif;
+
+    display: flex;
+    width: 387px;
+    justify-content: space-around;
+
+
+    background-color: #393E41;
+    color: rgb(255, 255, 255);
+}
+
+
+.liSocialCupCake {
+    list-style: none;
+    /* border: 1px dashed navy; */
+
+    justify-content: center;
+    align-items: center;
+
+    text-justify: center;
+    flex-direction: row;
+    width: 387px;
+}
+
+.imgCupCake {
+    color: white;
+    width: 100px;
+    height: 100px;
+
+    filter: invert(100%);
+
+}
