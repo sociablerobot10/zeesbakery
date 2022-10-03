@@ -40,7 +40,6 @@
 }
 
 /* LAST SECTION */
-
 .feature {
     width: 33.3%;
     text-align: center;
@@ -51,13 +50,8 @@
     font-weight: 700;
 }
 
-.feature-one {
-    ;
-}
-
 p {
     font-size: 25px;
-    color: #529FB9;
 }
 
 img {
@@ -65,24 +59,21 @@ img {
 }
 
 /* Box Model Hack */
-
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 html {
     font-size: 62.5%
         /* for REM font */
 }
 
-
 body {
     font-family: 'Cinzel Decorative', cursive;
     margin: 0;
+    color: black;
 }
 
-
+/* HEADER */
 header {
     height: 112px;
     background-color: #E7BB41;
@@ -93,7 +84,6 @@ header {
     align-items: center;
     justify-content: flex-start;
 }
-
 
 /* HEADER UPPER LEFT : ZEE BAKERY CONTAINER */
 .headerLeftThird {
@@ -113,7 +103,6 @@ header {
     justify-content: center;
 }
 
-
 /* HEADER UPPER LEFT : SCALLOP DETAILS */
 .shape {
     position: absolute;
@@ -123,24 +112,19 @@ header {
     background-color: aquamarine;
 }
 
-.top,
-.right,
-.bottom,
-.left {
+.top, .right, .bottom, .left {
     background-color: blueviolet;
     display: inline-block;
     margin: 10px;
     border: 1px solid black;
 }
 
-.top,
-.bottom {
+.top, .bottom {
     height: 10px;
     width: 20px;
 }
 
-.right,
-.left {
+.right, .left {
     height: 20px;
     width: 10px;
 }
@@ -177,10 +161,8 @@ header {
     color: rgb(0, 0, 0);
 
     /* border: 2px dashed rgb(189, 12, 12);   */
-    /*              */
     height: 112px;
     width: 100%;
-
 
     font-size: 3rem;
     font-family: 'Gentium Book Basic', serif;
@@ -199,7 +181,6 @@ header {
 .headerLinks:hover {
     /* background-color: #E7BB41; */
     background-color: #ff595f8b;
-
     /* border: 2px dashed #FF595E; */
     /* border-radius: 4rem; */
 }
@@ -229,10 +210,10 @@ li {
     color: #000000;
     color: #ffffff;
 }
+/* END HEADER */
 
-/* The sidebar menu */
+/* SIDEBAR */
 .sidebar {
-   
     width: 40%;
    /* position: fixed; /* Fixed Sidebar (stay in place on scroll) */
    /* top: auto; /* Stay at the top */
@@ -242,8 +223,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    background-color: black;
+    border: 2px solid #393E41;
+    background-color: #393E41;
   }
 
   .imagesInSidebar{
@@ -251,6 +232,7 @@ li {
     align-items: center;
     width: 50%;
   }
+  /* END SIDEBAR */
 
 /* BODY */
 .mainBody{
@@ -261,39 +243,48 @@ li {
     justify-content: left;
 }
 
-
 .AboutUsText{
     width: 60%;
 }
-
-
-.Paragraph{
-}
+.Paragraph{}
 
 /* MEET THE TEAM */
 .MeetTheTeam{
     font-size: 2.2rem;
     text-align: center;
-    text-justify: center;
     color: black;
-    
 }
 .TeamMember1{
     width: 25%; float: left;
-    background-color: orange;
+    background-color: #E7BB41;
+    padding-right: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
 .TeamMember2{
     width: 25%; float: left;
+    background-color: #E7BB41;
+    padding-right: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
 .TeamMember3{
     width: 25%; float: left;
+    background-color: #E7BB41;
+    padding-right: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
 .TeamMember4{
     width: 25%; float: left;
+    background-color: #E7BB41;
+    padding-right: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
+/* END BODY */
 
-/* Footer */
-
+/* FOOTER */
 footer {
     width: auto;
     height: 211px;
@@ -316,10 +307,7 @@ footer {
     align-items: center;
 
     width: 387px;
-
 }
-
-
 
 .footerMiddle {
     font-size: 1rem;
@@ -337,10 +325,7 @@ footer {
     flex-grow: 1;
 }
 
-
 .footerLinks {}
-
-
 
 .ulSocial {
     list-style: none;
@@ -357,7 +342,6 @@ footer {
     list-style: none;
     /* border: 1px dashed navy; */
 }
-
 
 .sCopyRight {
     align-items: center;
@@ -377,9 +361,6 @@ footer {
     height: 50px;
 }
 
-
-
-
 .footerRight {
     font-size: 1rem;
     font-family: 'Gentium Book Basic', serif;
@@ -392,7 +373,6 @@ footer {
     background-color: #393E41;
     color: rgb(255, 255, 255);
 }
-
 
 .liSocialCupCake {
     list-style: none;
@@ -412,5 +392,68 @@ footer {
     height: 100px;
 
     filter: invert(100%);
+}
+/* FOOTER END */
 
+/* Media Querry */
+
+/* Mobile */
+@media screen and (min-width: 320) and (max-width: 480) and (orientation: landscape){
+    .MeetTheTeam{
+        font-size: 2.2rem;
+        text-align: center;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .TeamMember1{
+        width: 100%; 
+        background-color: #E7BB41;
+        font-size: 2rem;
+        text-align: center;
+        
+        
+    }
+    .TeamMember2{
+        width: 100%;
+        background-color: #E7BB41;
+        font-size: 2rem;
+        text-align: center;
+       
+    }
+    .TeamMember3{
+        width: 100%;
+        background-color: #E7BB41;
+        font-size: 2rem;
+        text-align: center;
+       
+    }
+    .TeamMember4{
+        width: 100%; 
+        background-color: #E7BB41;
+        font-size: 2rem;
+        text-align: center;
+     
+    }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481) and (max-width: 768){
+
+
+}
+/* Small screens, Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    
+}
+
+/* Desktops, large screens*/
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+
+}
+
+/* Extra Large screens, T.V. */
+@media screen and (min-width: 1201){
+    
 }
