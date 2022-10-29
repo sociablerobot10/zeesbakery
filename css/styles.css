@@ -528,14 +528,12 @@ body #reviews {
 /*******************************************/
 
 .loc-container {
-  border: 5px solid black;
   display: flex;
   justify-content: center;
   background-color: #fff;
 }
 
 .loc-containerTwo {
-  border: 3px solid blue;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -543,13 +541,11 @@ body #reviews {
 }
 
 .loc-item {
-  border: 2px solid red;
   padding: 5rem 5rem;
   width: 60%;
 }
 
 .loc-item-2 {
-  border: 2px solid purple;
   background-image: url("../images/nyc.png");
   background-size: cover;
   width: 40%;
@@ -614,17 +610,16 @@ span {
 
 @media (max-width: 790px) {
   .loc-item-2 {
-    border: 2px solid purple;
-    width: 40%;
+    width: auto;
     height: 600px;
   }
-
-  .img {
-    width: 100%;
-    object-fit: cover;
+  .loc-item {
+    padding: 5rem 5rem;
+    width: auto;
   }
-  .loc-h2 {
-    font-size: 4rem;
+  .loc-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* ================================
