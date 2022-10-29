@@ -1,314 +1,286 @@
- *,
- *::before,
- *::after {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- /* Clear fix hack */
- .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
- }
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
- .clear {
-     clear: both;
- }
+.clear {
+  clear: both;
+}
 
- /* FIRST SECTION */
+/* FIRST SECTION */
 
- #hero {
-     width: 100%;
-     height: 550px;
+#hero {
+  width: 100%;
+  height: 550px;
 
-     background-image: url("../images/cupcake.jpg");
-     background-position: center;
-     background-size: 100%;
-     background-repeat: no-repeat;
- }
+  background-image: url("../images/cupcake.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
- #hero h1 {
-     font-family: 'Pacifico', sans-serif;
-     font-size: 7em;
-     text-align: center;
-     padding-top: 4%;
-     color: #280904;
-     margin-top: 0%;
- }
+#hero h1 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 7em;
+  text-align: center;
+  padding-top: 4%;
+  color: #280904;
+  margin-top: 0%;
+}
 
- #muffin-img {
-     width: 5%;
-     float: left;
-     position: relative;
-     left: 36%;
-     top: 12%;
- }
+#muffin-img {
+  width: 5%;
+  float: left;
+  position: relative;
+  left: 36%;
+  top: 12%;
+}
 
- /* MID SECTION */
+/* MID SECTION */
 
+#mid-section {
+  height: 495px;
+  display: flex;
+  margin-top: 4%;
+}
 
- #mid-section {
-     height: 495px;
-     display: flex;
-     margin-top: 4%;
+.part-section {
+  width: 33.3%;
 
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 34px;
+  text-align: center;
+  color: #393e41;
+}
 
+#donut {
+  border-radius: 2.5% 0 0 2.5%;
+}
 
- }
+#waffle {
+  border-radius: 0 2.5% 2.5% 0;
+}
 
- .part-section {
-     width: 33.3%;
+#order {
+  background-color: #e7bb41;
+  padding-top: 5%;
+}
 
-     text-align: center;
-     font-family: 'Pacifico', sans-serif;
-     font-size: 34px;
-     text-align: center;
-     color: #393E41;
+#order h2 {
+  padding: 0 10%;
+  margin-right: 6%;
+  margin-left: 8%;
+  margin-bottom: 8%;
+}
 
+.order-now {
+  font-family: "Gentium Book Basic", serif;
+  text-decoration: none;
+  color: #393e41;
+}
 
- }
+#donut {
+  background-image: url("../images/donut-mid.jpg");
+  background-size: cover;
+  background-position: center top;
+}
 
- #donut {
-     border-radius: 2.5% 0 0 2.5%;
- }
+#waffle {
+  background-image: url("../images/heartwaffle-mid.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
- #waffle {
-     border-radius: 0 2.5% 2.5% 0;
- }
+button {
+  height: 100px;
+  width: 220px;
+  border-radius: 65px;
+  color: #393e41;
+  background-color: #b7c3f3;
+  font-size: 30px;
+  font-family: "Gentium Book Basic", serif;
+  font-weight: bold;
+  font-weight: 700;
+}
 
- #order {
-     background-color: #E7BB41;
-     padding-top: 5%;
- }
+#features {
+  height: 495px;
+  display: flex;
+  margin-top: 50px;
+}
 
+/* LAST SECTION */
 
- #order h2 {
+.feature {
+  width: 33.3%;
+  text-align: center;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 34px;
+  text-align: center;
+  color: #393e41;
+  font-weight: 700;
+}
 
-     padding: 0 10%;
-     margin-right: 6%;
-     margin-left: 8%;
-     margin-bottom: 8%;
+p {
+  font-size: 25px;
+  color: #529fb9;
+}
 
- }
+.feature img {
+  width: 35%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
 
- .order-now {
-     font-family: 'Gentium Book Basic', serif;
-     text-decoration: none;
-     color: #393E41;
- }
+.feature h3 {
+  padding-bottom: 5%;
+}
 
- #donut {
-     background-image: url("../images/donut-mid.jpg");
-     background-size: cover;
-     background-position: center top;
- }
+.feature p {
+  margin: 0 20%;
+}
 
- #waffle {
-     background-image: url("../images/heartwaffle-mid.jpg");
-     background-size: cover;
-     background-position: center;
- }
+/* Box Model Hack */
 
- button {
-
-     height: 100px;
-     width: 220px;
-     border-radius: 65px;
-     color: #393E41;
-     background-color: #B7C3F3;
-     font-size: 30px;
-     font-family: 'Gentium Book Basic', serif;
-     font-weight: bold;
-     font-weight: 700;
- }
-
- #features {
-     height: 495px;
-     display: flex;
-     margin-top: 50px;
- }
-
- /* LAST SECTION */
-
- .feature {
-     width: 33.3%;
-     text-align: center;
-     font-family: 'Gentium Book Basic', serif;
-     font-size: 34px;
-     text-align: center;
-     color: #393E41;
-     font-weight: 700;
- }
-
-
- p {
-     font-size: 25px;
-     color: #529FB9;
-
- }
-
- .feature img {
-     width: 35%;
-     padding-bottom: 3%;
-     padding-top: 3%;
- }
-
- .feature h3 {
-     padding-bottom: 5%;
- }
-
-
- .feature p {
-     margin: 0 20%;
-
- }
-
- /* Box Model Hack */
-
-
- /******************************************
+/******************************************
 /* BASE STYLES
 /*******************************************/
 
- html {
-     font-size: 62.5%
-         /* for REM font */
- }
+html {
+  font-size: 62.5%;
+  /* for REM font */
+}
 
+body {
+  font-family: "Cinzel Decorative", cursive;
+  margin: 0;
+}
 
- body {
-     font-family: 'Cinzel Decorative', cursive;
-     margin: 0;
- }
+header {
+  height: 112px;
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+/* HEADER UPPER LEFT : ZEE BAKERY CONTAINER */
+.headerLeftThird {
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
 
+  height: 112px;
+  /* border: 1px dashed navy; */
+  width: 387px;
 
+  font-size: 4.5rem;
+  font-family: "Pacifico", cursive;
 
- header {
-     height: 112px;
-     background-color: #E7BB41;
-     color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: flex-start;
- }
+/* HEADER UPPER LEFT : SCALLOP DETAILS */
+.shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
+  background-color: aquamarine;
+}
 
+.top,
+.right,
+.bottom,
+.left {
+  background-color: blueviolet;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid black;
+}
 
- /* HEADER UPPER LEFT : ZEE BAKERY CONTAINER */
- .headerLeftThird {
-     background-color: #393E41;
-     color: rgb(255, 255, 255);
+.top,
+.bottom {
+  height: 10px;
+  width: 20px;
+}
 
-     height: 112px;
-     /* border: 1px dashed navy; */
-     width: 387px;
+.right,
+.left {
+  height: 20px;
+  width: 10px;
+}
 
-     font-size: 4.5rem;
-     font-family: 'Pacifico', cursive;
+/* shape-outside: inset(20px 10px 20px 10px round 10px); */
+/* background:red; */
 
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: center;
- }
+.bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
+/* HEADER UPPER RIGHT : LINK CONTAINER  */
+.headerRightThird {
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
 
- /* HEADER UPPER LEFT : SCALLOP DETAILS */
- .shape {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate (-50%, -50%);
-     background-color: aquamarine;
- }
+  /* font-size: 2rem; */
+  font-family: "Gentium Book Basic", serif;
 
- .top,
- .right,
- .bottom,
- .left {
-     background-color: blueviolet;
-     display: inline-block;
-     margin: 10px;
-     border: 1px solid black;
- }
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
 
- .top,
- .bottom {
-     height: 10px;
-     width: 20px;
- }
+.ulLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
 
- .right,
- .left {
-     height: 20px;
-     width: 10px;
- }
+.headerLinks {
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
 
- /* shape-outside: inset(20px 10px 20px 10px round 10px); */
- /* background:red; */
+  /* border: 2px dashed rgb(189, 12, 12);   */
+  /*              */
+  height: 112px;
+  width: 100%;
 
- .bottom {
-     border-bottom-left-radius: 10px;
-     border-bottom-right-radius: 10px;
- }
+  font-size: 3rem;
+  font-family: "Gentium Book Basic", serif;
 
+  text-justify: center;
+  text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  /* gap:20px; */
+  justify-content: space-evenly;
+  /* flex:content; */
+  flex-grow: 5;
+}
 
-
-
- /* HEADER UPPER RIGHT : LINK CONTAINER  */
- .headerRightThird {
-     background-color: #E7BB41;
-     color: rgb(0, 0, 0);
-
-     /* font-size: 2rem; */
-     font-family: 'Gentium Book Basic', serif;
-
-     display: flex;
-     justify-content: center;
-     flex-grow: 1;
- }
-
- .ulLinks {
-     display: flex;
-     justify-content: space-evenly;
-     flex-grow: 1;
- }
-
- .headerLinks {
-     background-color: #E7BB41;
-     color: rgb(0, 0, 0);
-
-     /* border: 2px dashed rgb(189, 12, 12);   */
-     /*              */
-     height: 112px;
-     width: 100%;
-
-
-     font-size: 3rem;
-     font-family: 'Gentium Book Basic', serif;
-
-     text-justify: center;
-     text-align: center;
-
-     display: flex;
-     flex-direction: column;
-     /* gap:20px; */
-     justify-content: space-evenly;
-     /* flex:content; */
-     flex-grow: 5;
- }
-
-
- /*
+/*
 .headerLinks:hover {
   background-color: #e7bb41;
   border: 2px dashed #FF595E;
@@ -316,267 +288,340 @@
 }
 */
 
- .headerLinks:hover {
-     /* background-color: #E7BB41; */
-     background-color: #ff595f8b;
-
-     /* border: 2px dashed #FF595E; */
-     /* border-radius: 4rem; */
- }
-
-
- li {
-     list-style: none;
-     text-decoration: none;
-     /* border: 1px dashed navy; */
- }
-
-
- .aLink {
-     list-style: none;
-     text-decoration: none;
-
-     text-align: center;
-     text-justify: center;
-     /* border: 1px dashed navy; */
- }
-
-
- .aLink:hover {
-     /* border: 1px dashed navy; */
-     font-size: 3.5rem;
-     font-size: 3.2rem;
-
-     font-family: 'Gentium Book Basic', serif;
-     /* color:#FF595E; */
-     color: #000000;
-     color: #ffffff;
- }
-
-
-
-
-
-
-
-
-
- /* TEMPORARY PLACE HOLDER FOR MIDDLE OF THE BODY */
-
- .tempCentralBody {
-     width: auto;
-     height: 600px;
-     display: flex;
- }
-
-
-
-
-
-
-
-
-
- footer {
-     width: auto;
-     height: 211px;
-
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
- }
-
- .footerLeft {
-     font-size: 2.5rem;
-     font-family: 'Gentium Book Basic', serif;
-
-     background-color: #393E41;
-     color: rgb(255, 255, 255);
-
-     justify-content: center;
-     display: flex;
-     align-items: center;
-
-     width: 387px;
-
- }
-
-
-
- .footerMiddle {
-     font-size: 1rem;
-     font-family: 'Gentium Book Basic', serif;
-
-     background-color: #E7BB41;
-     color: rgb(0, 0, 0);
-     /* border: 2px dashed navy; */
-
-     display: flex;
-     justify-content: space-around;
-     flex-direction: column;
-
-     height: 211px;
-     flex-grow: 1;
- }
-
-
- .footerLinks {}
-
-
-
- .ulSocial {
-     list-style: none;
-     /* border: 1px dashed navy; */
-
-     display: flex;
-     justify-content: space-around;
-
-     align-items: center;
-     width: 100%;
- }
-
- .liSocial {
-     list-style: none;
-     /* border: 1px dashed navy; */
- }
-
-
- .sCopyRight {
-     align-items: center;
-     justify-content: space-around;
- }
-
- .pCopyRight {
-     text-justify: center;
-     text-align: center;
-     font-size: 2.0rem;
-
-     align-items: center;
- }
-
- .imgSocial {
-     width: 50px;
-     height: 50px;
- }
-
-
-
-
- .footerRight {
-     font-size: 1rem;
-     font-family: 'Gentium Book Basic', serif;
-
-     display: flex;
-     width: 387px;
-     justify-content: space-around;
-
-
-     background-color: #393E41;
-     color: rgb(255, 255, 255);
- }
-
-
- .liSocialCupCake {
-     list-style: none;
-     /* border: 1px dashed navy; */
-
-     justify-content: center;
-     align-items: center;
-
-     text-justify: center;
-     flex-direction: row;
-     width: 387px;
- }
-
- .imgCupCake {
-     color: white;
-     width: 100px;
-     height: 100px;
-
-     filter: invert(100%);
-
- }
-
-
+.headerLinks:hover {
+  /* background-color: #E7BB41; */
+  background-color: #ff595f8b;
+
+  /* border: 2px dashed #FF595E; */
+  /* border-radius: 4rem; */
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  /* border: 1px dashed navy; */
+}
+
+.aLink {
+  list-style: none;
+  text-decoration: none;
+
+  text-align: center;
+  text-justify: center;
+  /* border: 1px dashed navy; */
+}
+
+.aLink:hover {
+  /* border: 1px dashed navy; */
+  font-size: 3.5rem;
+  font-size: 3.2rem;
+
+  font-family: "Gentium Book Basic", serif;
+  /* color:#FF595E; */
+  color: #000000;
+  color: #ffffff;
+}
+
+/* TEMPORARY PLACE HOLDER FOR MIDDLE OF THE BODY */
+
+.tempCentralBody {
+  width: auto;
+  height: 600px;
+  display: flex;
+}
+
+footer {
+  width: auto;
+  height: 211px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerLeft {
+  font-size: 2.5rem;
+  font-family: "Gentium Book Basic", serif;
+
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  width: 387px;
+}
+
+.footerMiddle {
+  font-size: 1rem;
+  font-family: "Gentium Book Basic", serif;
+
+  background-color: #e7bb41;
+  color: rgb(0, 0, 0);
+  /* border: 2px dashed navy; */
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  height: 211px;
+  flex-grow: 1;
+}
+
+.footerLinks {
+}
+
+.ulSocial {
+  list-style: none;
+  /* border: 1px dashed navy; */
+
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  width: 100%;
+}
+
+.liSocial {
+  list-style: none;
+  /* border: 1px dashed navy; */
+}
+
+.sCopyRight {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pCopyRight {
+  text-justify: center;
+  text-align: center;
+  font-size: 2rem;
+
+  align-items: center;
+}
+
+.imgSocial {
+  width: 50px;
+  height: 50px;
+}
+
+.footerRight {
+  font-size: 1rem;
+  font-family: "Gentium Book Basic", serif;
+
+  display: flex;
+  width: 387px;
+  justify-content: space-around;
+
+  background-color: #393e41;
+  color: rgb(255, 255, 255);
+}
+
+.liSocialCupCake {
+  list-style: none;
+  /* border: 1px dashed navy; */
+
+  justify-content: center;
+  align-items: center;
+
+  text-justify: center;
+  flex-direction: row;
+  width: 387px;
+}
+
+.imgCupCake {
+  color: white;
+  width: 100px;
+  height: 100px;
+
+  filter: invert(100%);
+}
 
 /* ==============================
     ====reviews starts========= */
 
-
- body #reviews{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(217, 220, 230, 0.644),rgba(4,9,30,0.7)),url("../images/cupcake.jpg");
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding-left: 80px;
-    padding-right: 80px;
+body #reviews {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(217, 220, 230, 0.644),
+      rgba(4, 9, 30, 0.7)
+    ),
+    url("../images/cupcake.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.heading{
-    padding-top: 80px;
-    padding-bottom:80px;
-    align-items: center;
-    text-align: center;
-    font-family: 'Pacifico', sans-serif;
-    font-size: 34px;
+.heading {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 34px;
 }
-.reviews .slider{
-    padding:5px;
-    box-shadow:2px 2px 30px rgba(0,0,0,0.1);
-    border:2px solid rgba(0,0,0,.2);
-    border-radius:10px;
-    position: relative;
-    background-color: white;
+.reviews .slider {
+  padding: 5px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
 }
-.reviews .slider .profile-img{
-    position: absolute;
-    top: 20px; left: 20px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow:hidden;
-    margin-right: 20px;
+.reviews .slider .profile-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
 }
-.profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.reviews .slider .user{
-    display: flex;
-    gap:10px;
-    align-items:center;
-    color: black;
-    padding-left: 150px;
-    padding-top: 40px;
-}
-.reviews .slider .user h3{
-    font-size: 25px;
-    font-family: 'Gentium Book Basic', serif;
-    font-weight: 700;
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.reviews .slider .user i{
-    font-size: 25px;
-    color:yellow;
-    padding-top: 10px;
+.reviews .slider .user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: black;
+  padding-left: 150px;
+  padding-top: 40px;
 }
-.reviews .slider p{
-    font-size:18px ;
-    color: black;
-    font-family: 'Gentium Book Basic', serif;
-    padding: 10px;
-    padding-top: 80px;
-    padding-bottom: 60px;
-    font-weight:400px ;
+.reviews .slider .user h3 {
+  font-size: 25px;
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 700;
+}
+
+.reviews .slider .user i {
+  font-size: 25px;
+  color: yellow;
+  padding-top: 10px;
+}
+.reviews .slider p {
+  font-size: 18px;
+  color: black;
+  font-family: "Gentium Book Basic", serif;
+  padding: 10px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  font-weight: 400px;
 }
 .swiper-button-next,
-.swiper-button-prev{
-    color: black !important;
+.swiper-button-prev {
+  color: black !important;
 }
 
 /* =============reviews ends====== */
 
+/******************************************
+/* LOCATION PAGE
+/*******************************************/
+
+.loc-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.loc-containerTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0;
+}
+
+.loc-item {
+  padding: 5rem 5rem;
+  width: 60%;
+}
+
+.loc-item-2 {
+  background-image: url("../images/nyc.png");
+  background-size: cover;
+  width: 40%;
+  height: auto;
+}
+
+.fa-solid {
+  margin-top: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff595e;
+}
+
+.icon-location {
+  padding-right: 5.4rem;
+}
+.loc-h2 {
+  text-align: center;
+  font-family: "pacifico", sans-serif;
+  color: #393e41;
+
+  font-size: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-family: "Gentium Book Basic", sans-serif;
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.parOne,
+.parTwo {
+  display: inline-block;
+  /* margin-right: 12%; */
+  text-align: center;
+  font-family: "Gentium Book Basic", sans-serif;
+  font-weight: 700;
+}
+
+.loc-item .parOne {
+  color: #ff595e;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+
+span {
+  color: #000;
+}
+.loc-item .parTwo {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 790px) {
+  .loc-item-2 {
+    width: auto;
+    height: 600px;
+  }
+  .loc-item {
+    padding: 5rem 5rem;
+    width: auto;
+  }
+  .loc-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ================================
+end if location page
+===================================*/
