@@ -1,54 +1,84 @@
 /* Horizontal sections */
 #menu-title {
     width: 100%;
-    height: 250px;
+    height: 10%;
+    font-size: 2.5em;
+    padding-left: 10%;
+    
 }
 
 #menu-title h1 {
     color: #280904;
 }
 #menu-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas:
-	"Title"
-	"product-image"
-	"item-name"
-	"item-description"
-	"price"
 	
 }
 
 #menu-list .Category1 {
     display: grid;
+    grid-template-rows: 1fr, 3fr;    
+    grid-template-columns: repeat(auto-fill,minmax(300px,2fr));
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    width: 1500px;
+    margin: auto;
+    grid-gap: 25px 25px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 
-menu-list .Category1 h2 {
-    display: grid;
+#menu-list .Category1 h2 {
     grid-area: Title;
+    font-size: 2em;
 }
 
-menu-list .Category1 product h3{
-    grid-area: item-name;
-}
-menu-list .Category1 product p{
-    grid-area: item-description;
-}
-
-menu-list .Category1 product span{
-    grid-area: price;
-}
-
-menu-list .Category1 productimg {
-    width: 100px;
-    height: 200px;
-    object-fit: fill;
+#menu-list .Category1 .product  {
     display: grid;
-    grid-area: product-image;
-}
-
-menu-list .product {
-    display: inline-grid;
+    grid-row: 1;
+    background-color: #E7BB41;
+    border-radius: 25px;
+    grid-template-rows: 3fr 1fr 2fr 1fr
+    grid-area: product;
+    grid-template-areas:
+	"item-name"
+	"product-image"
+	"item-description"
+	"price";
+    box-shadow: 4px 4px 2px #393E41;
     
 }
+
+#menu-list .Category1 .product h3{
+    grid-area: item-name;
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+    margin-top: 10%;
+}
+#menu-list .Category1 .product p{
+    grid-area: item-description;
+    text-align: center;
+    color: #393E41;
+    font-size: 1.5em;
+}
+
+#menu-list .Category1 .product span{
+    grid-area: price;
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#menu-list .Category1 .product > img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    grid-area: product-image;
+    margin: auto;
+    border-radius: 15px;
+}
+
